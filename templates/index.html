@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+    <h1>Public Newspaper for Everyone.</h1>
+    <div class="card" style="width: 18rem;">
+        <img src="https://frontiersinblog.files.wordpress.com/2020/05/frontiers-editors-1200-x-800.jpg?w=1024" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Create your first article here!</h5>
+          <p class="card-text"><a href="{% url 'signup' %}">Sign up</a> here if not currently registered.</p>
+          <a href="{% url 'news_new' %}" class="btn btn-primary stretched-link">Create Article</a>
+        </div>
+      </div>
+{% endblock content %}
